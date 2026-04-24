@@ -40,6 +40,8 @@ export const errorMiddleware = (err, req, res, next) => {
     err = new ErrorHandler(message, 400);
   }
 
+  console.error("ERROR:", err.message, err.stack);
+
   return res.status(err.statusCode).json({
     success: false,
     message: err.message,
