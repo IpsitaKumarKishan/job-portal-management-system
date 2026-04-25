@@ -33,66 +33,38 @@
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.8rem;
 }
 h2 {
-  font-size: 3.4rem;
-}
-h3 {
-  font-size: 2.7rem;
-}
-h4 {
   font-size: 2.2rem;
 }
-h5 {
-  font-size: 2rem;
+h3 {
+  font-size: 1.8rem;
 }
-h6 {
+h4 {
   font-size: 1.5rem;
 }
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1.1rem;
+}
 p {
-  font-size: 20px;
+  font-size: 15px;
+  line-height: 1.6;
 }
 @media (max-width: 1520px) {
-  h1 {
-    font-size: 3.4rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  h3 {
-    font-size: 2.5rem;
-  }
-  h4 {
-    font-size: 2rem;
-  }
-  h5 {
-    font-size: 1.7rem;
-  }
-  h6 {
-    font-size: 1.3rem;
-  }
+  h1 { font-size: 2.4rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.6rem; }
 }
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.6rem;
-  }
-  h2 {
-    font-size: 2.3rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  h4 {
-    font-size: 1.8rem;
-  }
-  h5 {
-    font-size: 1.45rem;
-  }
-  h6 {
-    font-size: 1.15rem;
-  }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.5rem; }
 }
+
 
 .authPage {
   display: flex;
@@ -103,15 +75,17 @@ p {
 }
 
 .authPage .container {
-  flex: 1;
+  max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: var(--bg-card);
-  padding: 60px;
+  padding: 50px;
   box-shadow: var(--shadow-md);
   z-index: 10;
 }
+
 
 .authPage .container .header {
   display: flex;
@@ -354,37 +328,38 @@ p {
 }
 
 .heroSection .title h1 {
-  font-size: 3.5rem;
-  line-height: 1.1;
+  font-size: 2.8rem;
+  line-height: 1.2;
   font-family: "Outfit", sans-serif;
   margin-bottom: 20px;
 }
 
 .heroSection .title p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-muted);
-  max-width: 500px;
+  max-width: 460px;
 }
 
 .heroSection .details {
   max-width: 1200px;
   width: 90%;
-  margin: 40px auto;
+  margin: 20px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
 }
 
 .heroSection .details .card {
   background: white;
-  padding: 24px;
+  padding: 18px;
   border-radius: 12px;
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   transition: var(--transition);
 }
+
 
 .heroSection .details .card:hover {
   box-shadow: var(--shadow-md);
@@ -468,18 +443,19 @@ p {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
 }
 
 .howitworks .card {
   background: white;
-  padding: 40px;
-  border-radius: 16px;
+  padding: 30px;
+  border-radius: 12px;
   text-align: center;
   transition: var(--transition);
   border: 1px solid var(--border);
 }
+
 
 .howitworks .card:hover {
   border-color: var(--primary);
