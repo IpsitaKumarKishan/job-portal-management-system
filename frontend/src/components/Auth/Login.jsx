@@ -49,7 +49,7 @@ const Login = () => {
   return (
     <>
       <section className="authPage">
-        <div className="container">
+        <div className="container animate-up">
           <div className="header">
             <img src="/careerconnect-black.png" alt="logo" />
             <h3>Login to your account</h3>

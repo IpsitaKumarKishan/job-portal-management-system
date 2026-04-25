@@ -33,11 +33,11 @@ const PopularCompanies = () => {
         <div className="banner">
           {companies.map((element) => {
             return (
-              <div className="card" key={element.id}>
+              <div className="card animate-up" key={element.id}>
                 <div className="content">
                   <div className="icon">{element.icon}</div>
                   <div className="text">
-                    <p>{element.title}</p>
+                    <h4>{element.title}</h4>
                     <p>{element.location}</p>
                   </div>
                 </div>

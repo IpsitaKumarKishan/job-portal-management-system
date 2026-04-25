@@ -67,10 +67,10 @@ const PopularCategories = () => {
       <div className="banner">
         {categories.map((element) => {
           return (
-            <div className="card" key={element.id}>
+            <div className="card animate-up" key={element.id}>
               <div className="icon">{element.icon}</div>
               <div className="text">
-                <p>{element.title}</p>
+                <h4>{element.title}</h4>
                 <p>{element.subTitle}</p>
               </div>
             </div>
