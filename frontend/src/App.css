@@ -333,10 +333,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heroSection {
-  padding: 120px 0 80px;
+  padding: 160px 0 100px;
   background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.08), transparent),
               radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.08), transparent);
 }
+
 
 .heroSection .container {
   max-width: 1240px;
@@ -882,12 +883,14 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 18px 0;
   transition: var(--transition);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
 }
+
 
 .navbarShow .container {
   max-width: 1200px;
@@ -899,10 +902,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbarShow .logo img {
-  height: 48px;
+  height: 42px;
   width: auto;
-  filter: invert(1) brightness(0.2);
+  object-fit: contain;
 }
+
 
 .navbarShow .menu {
   display: flex;
@@ -914,12 +918,15 @@ h1, h2, h3, h4, h5, h6 {
 .navbarShow .menu li a {
   text-decoration: none;
   color: var(--text-main);
-  font-weight: 500;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
   transition: var(--transition);
   position: relative;
+  padding: 8px 0;
 }
+
 
 .navbarShow .menu li a::after {
   content: "";
