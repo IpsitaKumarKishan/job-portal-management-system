@@ -71,8 +71,10 @@ p {
   min-width: 100%;
   margin: 0 auto;
   min-height: 100vh;
+  padding-top: 80px;
   background: var(--bg-main);
 }
+
 
 .authPage .container {
   max-width: 500px;
@@ -315,7 +317,8 @@ p {
 
 .heroSection {
   padding: 100px 0 60px;
-  background: white;
+  background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.05), transparent 40%),
+              radial-gradient(circle at bottom left, rgba(14, 165, 233, 0.05), transparent 40%);
 }
 
 .heroSection .container {
@@ -326,6 +329,24 @@ p {
   align-items: center;
   gap: 60px;
 }
+
+.heroSection .title {
+  flex: 1.2;
+}
+
+.heroSection .image {
+  flex: 0.8;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heroSection .image img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+
 
 .heroSection .title h1 {
   font-size: 2.8rem;
@@ -339,6 +360,7 @@ p {
   color: var(--text-muted);
   max-width: 460px;
 }
+
 
 .heroSection .details {
   max-width: 1200px;
@@ -574,11 +596,19 @@ p {
   border-color: var(--primary);
 }
 
+.post_job {
+  background: #f1f3f6;
+  min-height: 100vh;
+  padding: 120px 20px 50px;
+}
+
+
 .jobs {
   background: #f1f3f6;
   min-height: 100vh;
-  padding: 50px 20px;
+  padding: 120px 20px;
 }
+
 .jobs .container {
   display: flex;
   flex-direction: column;
@@ -653,8 +683,9 @@ p {
 
 .jobDetail {
   background: #f1f3f6;
-  padding: 50px  20px;
+  padding: 120px 20px 50px;
 }
+
 .jobDetail .container {
   max-width: 1500px;
   min-width: 1500px;
@@ -699,7 +730,9 @@ p {
 .application {
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
 }
+
 .application .container {
   min-width: 1500px;
   max-width: 1500px;
@@ -759,9 +792,10 @@ p {
 }
 .my_applications {
   background: #f1f3f6;
-  padding: 50px 20px;
+  padding: 100px 20px 50px;
   min-height: 885px;
 }
+
 .my_applications .container {
   max-width: 1500px;
   min-width: 1500px;
@@ -861,10 +895,12 @@ p {
 .job_post {
   background: #f1f3f6;
   padding: 50px 20px;
+  padding-top: 120px;
   min-height: 870px;
   display: flex;
   align-items: center;
 }
+
 .job_post .container {
   max-width: 1500px;
   min-width: 1500px;
@@ -963,9 +999,10 @@ p {
 }
 .myJobs {
   background: #f1f3f6;
-  padding: 50px 20px;
+  padding: 100px 20px 50px;
   min-height: 870px;
 }
+
 .myJobs .container {
   min-width: 1500px;
   max-width: 1500px;
@@ -1239,7 +1276,9 @@ p {
 
 .notfound {
   min-height: 750px;
+  padding-top: 120px;
 }
+
 .notfound .content {
   display: flex;
   flex-direction: column;
