@@ -56,36 +56,20 @@ h1, h2, h3, h4, h5, h6 {
   background: #94a3b8;
 }
 
-/* Global Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInScale {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+/* Subdued Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .animate-up {
-  animation: fadeInUp 0.6s both;
+  animation: fadeIn 0.4s ease-out both;
 }
 
 .animate-scale {
-  animation: fadeInScale 0.6s both;
+  animation: fadeIn 0.4s ease-out both;
 }
+
 
 .authPage {
   display: flex;
@@ -351,17 +335,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .heroSection .title {
   flex: 1.2;
-  animation: fadeInUp 0.8s ease-out;
 }
 
 .heroSection .title h1 {
-  font-size: 3.5rem;
-  line-height: 1.1;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 800;
   margin-bottom: 24px;
-  background: linear-gradient(to bottom right, var(--text-main), #475569);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-main);
 }
+
 
 .heroSection .title p {
   font-size: 1.15rem;
@@ -372,19 +355,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .heroSection .image {
   flex: 0.8;
-  animation: fadeInScale 1s ease-out;
 }
 
 .heroSection .image img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));
-  transition: transform 0.5s ease;
+  transition: var(--transition);
 }
 
 .heroSection .image img:hover {
-  transform: translateY(-10px) rotate(1deg);
+  transform: translateY(-5px);
 }
+
 
 .details {
   max-width: 1200px;
@@ -928,24 +910,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.navbarShow .menu li a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--primary);
-  transition: var(--transition);
-}
-
 .navbarShow .menu li a:hover {
   color: var(--primary);
 }
 
-.navbarShow .menu li a:hover::after {
-  width: 100%;
-}
 
 .navbarShow .menu button {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
@@ -1053,13 +1021,14 @@ input:focus, select:focus, textarea:focus {
 
 .authPage .banner img {
   width: 80%;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.2));
-  animation: float 6s ease-in-out infinite;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+/* Clearer Navbar */
+.navbarShow {
+  background: #ffffff;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  padding: 16px 0;
 }
 
 .job_seeker_card .btn_area {
